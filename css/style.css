@@ -36,7 +36,7 @@ header {
 
 /* Top Aside */
 .aside1 {
-    grid-area: aside1; /* Below the header */
+    grid-area: aside1; 
     background-color: rgb(71, 71, 190);
     color: white;
     padding: 10px;
@@ -58,7 +58,7 @@ main {
     justify-content: center;
     gap: 10px;
     width: auto;
-    height: auto; /* Allow main to grow with content */
+    height: auto;
     margin: 0;
 }
 
@@ -74,7 +74,7 @@ main div {
 
 /* Bottom Aside */
 .aside2 {
-    grid-area: aside2; /* Above the footer */
+    grid-area: aside2;
     background-color: rgb(131, 185, 247);
     color: white;
     padding: 10px;
@@ -86,7 +86,7 @@ main div {
 
 /* Footer */
 footer {
-    grid-area: footer; /* Bottom of the page */
+    grid-area: footer; 
     background-color: rgb(224, 134, 30);
     color: white;
     padding: 10px;

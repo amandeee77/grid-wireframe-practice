@@ -8,10 +8,10 @@ body {
         "main"
         "aside2"
         "footer";
-    grid-template-columns: 1fr; /* Single column layout */
-    grid-template-rows: auto auto 1fr auto auto; /* Adjust rows */
-    height: 100vh; /* Full-page layout */
-    margin: 0; /* Remove default browser margin */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    height: 100vh;
+    margin: 0; 
 }
 
 header, aside, footer, main div {
@@ -29,8 +29,9 @@ header {
     color: white;
     padding: 10px;
     border-radius: 15px;
-    width: 100%;
-    height: 50px; /* Fixed height for header */
+    width: auto;
+    height: auto;
+    margin: 0;
 }
 
 /* Top Aside */
@@ -40,28 +41,32 @@ header {
     color: white;
     padding: 10px;
     border-radius: 15px;
-    width: 100%;
-    height: 50px;
+    width: auto;
+    height: auto;
+    margin: 0;
 }
 
 /* Main Content */
 main {
-    grid-area: main; /* Middle section for content */
-    display: flex; /* Stacking elements inside vertically */
-    flex-direction: column; /* Stacked layout */
-    gap: 10px;
+    grid-area: main; 
+    display: flex;
+    flex-direction: column;
     background-color: rgb(82, 190, 136);
     padding: 10px;
     border-radius: 15px;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+    width: auto;
+    height: auto; /* Allow main to grow with content */
+    margin: 0;
 }
 
 main div {
-    background-color: rgb(194, 102, 117); /* Background for each column */
+    background-color: rgb(194, 102, 117);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     border-radius: 15px;
     height: 50px;
     width: 100%;
@@ -74,8 +79,9 @@ main div {
     color: white;
     padding: 10px;
     border-radius: 15px;
-    width: 100%;
-    height: 50px;
+    width: auto;
+    height: auto;
+    margin: 0;
 }
 
 /* Footer */
@@ -85,6 +91,7 @@ footer {
     color: white;
     padding: 10px;
     border-radius: 15px;
-    width: 100%;
-    height: 50px;
+    width: auto;
+    height: auto;
+    margin: 0;
 }

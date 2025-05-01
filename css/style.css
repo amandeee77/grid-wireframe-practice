@@ -19,7 +19,8 @@ header, aside, footer, main div {
     justify-content: center; 
     align-items: center; 
     text-align: center; 
-    height: 100%; 
+    height: auto;
+    width: 100% 
 }
 
 /* Header */
@@ -94,4 +95,17 @@ footer {
     width: auto;
     height: auto;
     margin: 0;
+}
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "aside1 main aside2"
+            "footer footer footer";
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto auto auto;
+        width: 100vw; 
+        height: 100vh; 
+    }
 }
